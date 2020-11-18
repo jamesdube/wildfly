@@ -29,10 +29,10 @@ RUN cd $HOME \
     && mv $HOME/module.xml $JBOSS_HOME/modules/system/layers/base/com/mysql/main/ \
     && rm wildfly-$WILDFLY_VERSION.tar.gz \
     && chown -R jboss:0 ${JBOSS_HOME} \
-    && mkdir -p /data/servers/cache/epay \
-    && chown -R jboss:0 /data/servers/cache/epay \
+    && mkdir -p /data/ \
+    && chown -R jboss:0 /data/ \
     && chmod -R g+rw ${JBOSS_HOME} \
-    && chmod -R g+rw /data/servers/cache/epay 
+    && chmod -R g+rw /data/
 
 ENV LAUNCH_JBOSS_IN_BACKGROUND true
 
