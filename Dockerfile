@@ -39,7 +39,7 @@ ENV LAUNCH_JBOSS_IN_BACKGROUND true
 USER jboss
 
 # Expose the ports we're interested in
-EXPOSE 8080 9990
+EXPOSE 8080 9990 8787
 
 # Set the default command to run on boot
 # This will boot WildFly in the standalone mode and bind to all interface
